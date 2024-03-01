@@ -9,4 +9,12 @@
 body{
   direction: rtl;
   font-family: Yecan;
+  background-color: #f7f8fd;
 }
+
+  .hoverbtn:hover{
+    background: transparent;
+    border: 1px solid #fa693d;
+    color: #fa693d;
+    transition: .4s;
+  }

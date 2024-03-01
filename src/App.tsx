@@ -6,6 +6,9 @@ import './App.css'
 import BoxTilteleRight from './components/pages/BoxTilteleRight'
 import { Route, Routes, useRoutes } from 'react-router-dom'
 import { route } from './router/router'
+import CategorySelectBox from './components/CategorySelectBox'
+import SuggestBox from './components/SuggestBox'
+import FeedbackBar from './components/FeedbackBar'
 
 function App() {
  let Routes = useRoutes(route)
@@ -13,12 +16,17 @@ function App() {
     <>
     
    
-   <div className='flex w-full justify-around'>
+   <div className='flex w-full justify-evenly'>
    {Routes}
-    <aside>
+    <aside className='flex h-[53vh] flex-col justify-around'>
     <BoxTilteleRight/>
-      </aside>    
-    <h1>2</h1>
+    <CategorySelectBox/>
+    <SuggestBox/>
+      </aside>   
+      <main className='w-[50%] m-2'>
+          <FeedbackBar/>
+        </main> 
+
    </div>
     </>
   )
