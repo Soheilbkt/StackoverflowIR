@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Yecan;
+  src: url(../assets/font/Yekan-Bold.woff);
+}
+body{
+  direction: rtl;
+  font-family: Yecan;
+  background-color: #f7f8fd;
+}
+
+  .hoverbtn:hover{
+    background: transparent;
+    border: 1px solid #fa693d;
+    color: #fa693d;
+    transition: .4s;
+  }
+.flex-bas{
+   flex-basis: 80%;
+}
+.beforline::before{
+  content: "";
+  width: 1.25px;
+  height: 66%;
+  position: absolute;
+  left: 17px;
+  background: #8080801c;
+  top: 46px;
+ 
+}
